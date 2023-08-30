@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".OnBoardingFragment">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image"
+        android:src="@drawable/bud2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        app:layout_constraintTop_toBottomOf="@id/image"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginHorizontal="127dp"
+        android:progress="20"
+        android:progressTint="@color/light_orange"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/full"
+        app:layout_constraintTop_toBottomOf="@id/progress"
+        android:text="@string/full_contactless_experience"
+        android:textSize="26sp"
+        android:textAlignment="center"
+        android:textColor="@color/dark_blue"
+        android:layout_marginTop="18dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/from"
+        android:text="@string/from_ordering_to_paying_that_s_all_contactless"
+        app:layout_constraintTop_toBottomOf="@id/full"
+        android:textSize="16sp"
+        android:textColor="@color/light_grey"
+        android:layout_marginHorizontal="48dp"
+        android:textAlignment="center"
+        android:lineHeight="28dp"
+        android:layout_marginTop="14dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/later"
+        android:text="@string/sign_up_later"
+        app:layout_constraintTop_toBottomOf="@id/from"
+        android:layout_marginTop="32dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textColor="@color/light_purple"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sign_button"
+        app:layout_constraintTop_toBottomOf="@id/later"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="26dp"
+        android:text="@string/get_started"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

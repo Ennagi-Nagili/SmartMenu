@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".EmailFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/head"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/what_s_your_email"
+        android:textAlignment="center"
+        android:textColor="@color/dark_blue"
+        android:layout_marginTop="116dp"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/need"
+        app:layout_constraintTop_toBottomOf="@id/head"
+        android:text="@string/we_need_it_to_search_after_your_account_or_create_a_new_one"
+        android:textAlignment="center"
+        android:textColor="@color/light_grey"
+        android:layout_marginTop="14dp"
+        android:textSize="16sp"
+        android:layout_marginHorizontal="36dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mail"
+        app:layout_constraintTop_toBottomOf="@id/need"
+        android:background="@drawable/input_back"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="40dp"
+        android:hint="@string/email"
+        android:paddingHorizontal="16dp"
+        android:textSize="14sp"
+        android:textColorHint="@color/light_grey"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sign_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="26dp"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginBottom="34dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

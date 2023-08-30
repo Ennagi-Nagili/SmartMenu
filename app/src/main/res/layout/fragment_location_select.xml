@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".LocationSelectFragment"
+    android:background="@color/back_color">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toggle"
+        android:background="@drawable/toggle"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/share"
+        app:layout_constraintTop_toBottomOf="@id/toggle"
+        android:text="@string/share_your_location_with_us_to_order"
+        android:textColor="@color/dark_blue"
+        android:textSize="22sp"
+        android:layout_marginHorizontal="96dp"
+        android:textAlignment="center"
+        android:layout_marginTop="22dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/please"
+        android:text="@string/please_enter"
+        android:textSize="16sp"
+        android:textColor="@color/grey"
+        app:layout_constraintTop_toBottomOf="@id/share"
+        android:layout_marginHorizontal="24dp"
+        android:letterSpacing="0.09"
+        android:textAlignment="center"
+        android:layout_marginTop="14dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/location1"
+        app:layout_constraintTop_toBottomOf="@id/please"
+        android:background="@drawable/card_back"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="24dp"
+        android:paddingBottom="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gram"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="@string/gram_bistro"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/address"
+            app:layout_constraintTop_toBottomOf="@id/gram"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="@string/_790_8th_ave_new_york"
+            android:textColor="@color/grey"
+            android:textSize="14sp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="12dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/location2"
+        app:layout_constraintTop_toBottomOf="@id/location1"
+        android:background="@drawable/card_back"
+        android:layout_marginHorizontal="24dp"
+        android:paddingBottom="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gram2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="@string/bin_71"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/address2"
+            app:layout_constraintTop_toBottomOf="@id/gram2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="@string/_792_8th_ave_new_york"
+            android:textColor="@color/grey"
+            android:textSize="14sp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="12dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/location3"
+        app:layout_constraintTop_toBottomOf="@id/location2"
+        android:background="@drawable/card_back"
+        android:layout_marginHorizontal="24dp"
+        android:paddingBottom="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gram3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="@string/sushi_bar"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/address3"
+            app:layout_constraintTop_toBottomOf="@id/gram3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="@string/_794_8th_ave_new_york"
+            android:textColor="@color/grey"
+            android:textSize="14sp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="12dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/please"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="44dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="75dp"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sign_button"
+        android:layout_marginHorizontal="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/conti"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginBottom="38dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

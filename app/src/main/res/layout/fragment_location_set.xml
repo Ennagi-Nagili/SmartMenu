@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".LocationSetFragment"
+    android:background="@color/back_color">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toggle"
+        android:background="@drawable/toggle"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/set"
+        android:text="@string/set_your_locations"
+        android:textSize="22sp"
+        android:textColor="@color/dark_blue"
+        app:layout_constraintTop_toBottomOf="@id/toggle"
+        android:textAlignment="center"
+        android:layout_marginTop="22dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/qr_section"
+        app:layout_constraintTop_toBottomOf="@id/set"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/card_back"
+        android:paddingBottom="20dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/qr"
+            android:src="@drawable/qr"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scan"
+            android:text="Scan QR Code"
+            app:layout_constraintTop_toBottomOf="@id/qr"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textColor="@color/dark_blue"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_the"
+            app:layout_constraintTop_toBottomOf="@id/scan"
+            android:textSize="14sp"
+            android:textColor="@color/light_grey"
+            android:layout_marginHorizontal="20dp"
+            android:textAlignment="center"
+            android:layout_marginTop="12dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loc_section"
+        app:layout_constraintTop_toBottomOf="@id/qr_section"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/card_back"
+        android:paddingBottom="20dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/book"
+            android:src="@drawable/location"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/menu"
+            android:text="@string/select_location_manually"
+            app:layout_constraintTop_toBottomOf="@id/book"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textSize="16sp"
+            android:textColor="@color/dark_blue"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/if_you"
+            app:layout_constraintTop_toBottomOf="@id/menu"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textSize="14sp"
+            android:textColor="@color/light_grey"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:layout_marginHorizontal="20dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

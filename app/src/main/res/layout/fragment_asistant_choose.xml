@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AsistantChooseFragment"
+    android:background="@color/back_color">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loc"
+        android:src="@drawable/loc"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="27dp"
+        android:layout_marginStart="24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/loc"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/gram_bistro"
+        android:textSize="16sp"
+        android:textColor="@color/light_grey"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/toggle"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/find"
+        android:text="@string/let_s_find_the_perfect_dish_for_you"
+        android:textSize="24sp"
+        android:textColor="@color/dark_blue"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loc"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="32dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lamp_section"
+        app:layout_constraintTop_toBottomOf="@id/find"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/card_back"
+        android:paddingBottom="60dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lamp"
+            android:src="@drawable/lamp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/choose"
+            android:text="@string/choose_virtual_assistant"
+            app:layout_constraintTop_toBottomOf="@id/lamp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textSize="16sp"
+            android:textColor="@color/dark_blue"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/simplify_your_decisions_through_our_smart_menu"
+            app:layout_constraintTop_toBottomOf="@id/choose"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/go"
+            android:textSize="14sp"
+            android:textColor="@color/light_grey"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="96dp"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/go"
+            app:layout_constraintTop_toBottomOf="@id/choose"
+            app:layout_constraintRight_toRightOf="parent"
+            android:background="@drawable/go_btn"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/book_section"
+        app:layout_constraintTop_toBottomOf="@id/lamp_section"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/card_back"
+        android:paddingBottom="60dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/book"
+            android:src="@drawable/book"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/menu"
+            android:text="@string/go_to_the_menu"
+            app:layout_constraintTop_toBottomOf="@id/book"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:textSize="16sp"
+            android:textColor="@color/dark_blue"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/if_you_already_know_what_to_order_this_is_the_best_choice"
+            app:layout_constraintTop_toBottomOf="@id/menu"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/go2"
+            android:textSize="14sp"
+            android:textColor="@color/light_grey"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="96dp"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/go2"
+            app:layout_constraintTop_toBottomOf="@id/menu"
+            app:layout_constraintRight_toRightOf="parent"
+            android:background="@drawable/go_btn"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ShareLocationFragment">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toggle"
+        android:background="@drawable/toggle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loc"
+        android:background="@drawable/location"
+        app:layout_constraintTop_toBottomOf="@id/toggle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="162dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/share"
+        app:layout_constraintTop_toBottomOf="@id/loc"
+        android:text="@string/share_your_location_with_us_to_order"
+        android:textColor="@color/dark_blue"
+        android:textSize="22sp"
+        android:layout_marginHorizontal="96dp"
+        android:textAlignment="center"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/please"
+        android:text="@string/please_enter"
+        android:textSize="16sp"
+        android:textColor="@color/grey"
+        app:layout_constraintTop_toBottomOf="@id/share"
+        android:layout_marginHorizontal="24dp"
+        android:letterSpacing="0.09"
+        android:textAlignment="center"
+        android:layout_marginTop="14dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/conti"
+        android:background="@drawable/sign_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginHorizontal="24dp"
+        android:text="@string/conti"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginBottom="38dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/conti"
+        android:text="@string/enter_a_new_location"
+        android:textColor="@color/purple"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:layout_marginBottom="26dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
